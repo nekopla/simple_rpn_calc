@@ -1,7 +1,7 @@
 # simple_rpn_calc
 Very simple code of RPN calculator for Arduino
 
-## What's this
+## What's this?
 
 I made a keychain type RPN calculator like a toy with Arduino.
 
