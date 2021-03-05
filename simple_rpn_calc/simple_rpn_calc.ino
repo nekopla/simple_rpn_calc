@@ -141,6 +141,8 @@ void loop() {
             x_disp = String(x);
             
             operator_flg = 1;
+            enter_flg = 0;
+            
             blink_display();
         }
         else if (key.equals("-")) {
@@ -151,6 +153,8 @@ void loop() {
             x_disp = String(x);
             
             operator_flg = 1;
+            enter_flg = 0;
+
             blink_display();
         }
         else if (key.equals("*")) {
@@ -161,6 +165,8 @@ void loop() {
             x_disp = String(x);
             
             operator_flg = 1;
+            enter_flg = 0;
+
             blink_display();
         }
         else if (key.equals("/")) {
@@ -171,6 +177,8 @@ void loop() {
             x_disp = String(x);
 
             operator_flg = 1;
+            enter_flg = 0;
+
             blink_display();
         }
         // Enter
@@ -189,8 +197,7 @@ void loop() {
                 x_disp = "";
                 enter_flg = 0;
             }
-
-            if (operator_flg) {
+            else if (operator_flg) {
                 push();
                 x_disp = "";
                 operator_flg = 0;
